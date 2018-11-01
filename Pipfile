@@ -9,6 +9,7 @@ name = "pypi"
 django = "==1.11.6"
 gunicorn = "*"
 "psycopg2" = "*"
+dj-database-url = "*"
 
 [requires]
 python_version = "3.6"
