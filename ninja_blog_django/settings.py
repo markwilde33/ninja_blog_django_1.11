@@ -26,7 +26,7 @@ SECRET_KEY = '2atn3&+)=&q!_+y&3=u!8k1)ryp#*b)5ml^)!73p-3a7d7p8e4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ninjablog-django-1-11.herokuapp.com']
 
 
 # Application definition
