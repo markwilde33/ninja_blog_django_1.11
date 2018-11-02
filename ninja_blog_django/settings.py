@@ -26,7 +26,7 @@ SECRET_KEY = '2atn3&+)=&q!_+y&3=u!8k1)ryp#*b)5ml^)!73p-3a7d7p8e4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ninjablog-django-1-11.herokuapp.com']
+ALLOWED_HOSTS = [os.environ.get('HOSTNAME')]
 
 
 # Application definition
@@ -81,8 +81,7 @@ WSGI_APPLICATION = 'ninja_blog_django.wsgi.application'
 #     }
 # }
 
-DATABASES = {'default': dj_database_url.parse(
-    "postgres://mvqgivovabrnei:c021e977ede4da05e2294904d26ef6c1b0abb41f40688774b5000a2824fe463c@ec2-54-247-98-162.eu-west-1.compute.amazonaws.com:5432/d9jgtofmkb59p4")}
+DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
